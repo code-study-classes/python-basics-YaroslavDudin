@@ -5,11 +5,13 @@ def square_odds(numbers):
             result.append(num * num)
     return result
 
+
 def normalize_names(names):
     result = []
     for name in names:
         result.append(name.capitalize())
     return result
+
 
 def remove_invalid_emails(emails):
     result = []
@@ -17,6 +19,7 @@ def remove_invalid_emails(emails):
         if email.count('@') == 1 and len(email) >= 5 and not email.startswith('@') and not email.endswith('@'):
             result.append(email)
     return result
+
 
 def filter_palindromes(words):
     result = []
@@ -26,6 +29,7 @@ def filter_palindromes(words):
             result.append(word)
     return result
 
+
 def calculate_factorial(n):
     if n == 0:
         return 1
@@ -34,6 +38,7 @@ def calculate_factorial(n):
         for i in range(1, n + 1):
             factorial *= i
         return factorial
+
 
 def find_common_prefix(strings):
     if not strings:

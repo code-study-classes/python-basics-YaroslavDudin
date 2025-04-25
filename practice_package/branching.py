@@ -5,10 +5,12 @@ def is_weekend(day):
   }
   return days.get(day, False)
 
+
 def get_discount(amount):
     discount1 = amount * 0.1 if amount >= 5000 else 0
     discount2 = amount * 0.05 if amount >= 1000 and amount < 5000 else 0
     return discount1 or discount2
+
 
 def describe_number(n):
     if n < 10:
@@ -32,6 +34,7 @@ def convert_to_meters(unitNumber, lengthInUnits):
         5: lengthInUnits * 0.01
     }
     return units.get(unitNumber, 0)
+
 
 def describe_age(age):
     last_digit = age % 10

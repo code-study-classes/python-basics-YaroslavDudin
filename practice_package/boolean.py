@@ -15,10 +15,12 @@ check_unique_digits = lambda number: (
     and str(abs(number))[1] != str(abs(number))[2]
 )
 
+
 def check_palindrome_number(number):
     number_str = str(number)
     reversed_str = number_str[::-1]
     return number_str == reversed_str
+
 
 check_ascending_digits = lambda number: (
     number >= 100

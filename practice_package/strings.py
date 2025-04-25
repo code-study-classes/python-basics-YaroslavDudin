@@ -1,5 +1,6 @@
 extract_file_name = lambda file_path: file_path.split('/')[-1].split('.')[0]
 
+
 def encrypt_sentence(sentence):
     odd = ""
     even = ""
@@ -9,6 +10,7 @@ def encrypt_sentence(sentence):
         else:
             odd += sentence[i]
     return odd + even[::-1]
+
 
 def check_brackets(expression):
     open_brackets = []
@@ -26,12 +28,14 @@ def check_brackets(expression):
     else:
         return 0
 
+
 def reverse_domain(domain):
     parts = domain.split('.')
     reversed_parts = []
     for i in range(len(parts) - 1, -1, -1):
         reversed_parts.append(parts[i])
     return '.'.join(reversed_parts)
+
 
 def count_vowel_groups(word):
     vowels = "aeiouyAEIOUY"

@@ -7,16 +7,18 @@ def sum_even_digits(number):
             total += digit_int
     return total
 
+
 def count_vowel_triplets(text):
     text = text.lower()
     count = 0
     vowels = "aeiouy"
     for i in range(len(text) - 2):
         if (text[i] in vowels and
-            text[i+1] in vowels and
-            text[i+2] in vowels):
+            text[i + 1] in vowels and
+            text[i + 2] in vowels):
             count += 1
     return count
+
 
 def find_fibonacci_index(number):
     a = 0
@@ -28,6 +30,7 @@ def find_fibonacci_index(number):
         a, b = b, a + b
         index += 1
     return -1
+
 
 def remove_duplicates(string):
     result = ""

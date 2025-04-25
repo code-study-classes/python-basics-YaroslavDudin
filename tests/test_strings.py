@@ -8,6 +8,7 @@ from practice_package.strings import (
     reverse_domain,
 )
 
+
 class TestStringsFunctions:
     
     @pytest.mark.parametrize("path, expected", [

@@ -1,18 +1,17 @@
-def calculate_distance(x, y):
-    pass
+import math
+calculate_distance = lambda x, y: abs(x - y)
 
 
-def calculate_segments(a, b):
-    pass
+calculate_segments = lambda a, b: math.floor(a / b)
 
 
-def calculate_digit_sum():
-    pass
+calculate_digit_sum = lambda n: sum(map(int, str(abs(n))))
 
 
-def round_to_multiple():
-    pass
+def calculate_rect_area(x1, y1, x2, y2):
+    width = abs(x2 - x1)
+    height = abs(y2 - y1)
+    return width * height
 
-
-def calculate_rect_area():
-    pass
+def round_to_multiple(number, multiple):
+    return round(number / multiple) * multiple
